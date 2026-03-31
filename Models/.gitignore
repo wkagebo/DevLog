@@ -1,0 +1,19 @@
+# Build output
+bin/
+obj/
+ 
+# VS Code
+.vscode/
+ 
+# .NET user-specific files
+*.user
+*.suo
+ 
+# Rider
+.idea/
+ 
+# macOS
+.DS_Store
+ 
+# Project data file 
+devlog.json
