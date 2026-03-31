@@ -1,0 +1,14 @@
+/Users/wk/vscodeProjects/DevLog/bin/Debug/net10.0/DevLog
+/Users/wk/vscodeProjects/DevLog/bin/Debug/net10.0/DevLog.deps.json
+/Users/wk/vscodeProjects/DevLog/bin/Debug/net10.0/DevLog.runtimeconfig.json
+/Users/wk/vscodeProjects/DevLog/bin/Debug/net10.0/DevLog.dll
+/Users/wk/vscodeProjects/DevLog/bin/Debug/net10.0/DevLog.pdb
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/DevLog.GeneratedMSBuildEditorConfig.editorconfig
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/DevLog.AssemblyInfoInputs.cache
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/DevLog.AssemblyInfo.cs
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/DevLog.csproj.CoreCompileInputs.cache
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/DevLog.dll
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/refint/DevLog.dll
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/DevLog.pdb
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/DevLog.genruntimeconfig.cache
+/Users/wk/vscodeProjects/DevLog/obj/Debug/net10.0/ref/DevLog.dll
