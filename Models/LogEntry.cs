@@ -2,6 +2,6 @@ namespace DevLog.Models;
 
 public record LogEntry(
     Guid Id,
-    DateTime Date,
+    DateTime CreatedAt,
     string Text
 );

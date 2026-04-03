@@ -30,9 +30,18 @@ switch (args[0])
             Console.WriteLine("No entries yet.");
             return;
         }
+
+        var dateArg = args.SkipWhile(e => !e.Equals("--date")).Skip(1).FirstOrDefault();
+        bool parsed = DateTime.TryParse(dateArg, out DateTime filterDate);
+
+        if (dateArg != null && parsed)
+        {
+            entries = entries.Where(e => e.CreatedAt.Date == filterDate.Date).ToList();
+        }
+
         foreach (var e in entries)
         {
-            Console.WriteLine($"[{e.Date:yyyy-MM-dd HH:mm}] {e.Text}");
+            Console.WriteLine($"[{e.CreatedAt:yyyy-MM-dd HH:mm}] {e.Text}");
         }
         break;
     
