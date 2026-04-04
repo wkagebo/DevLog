@@ -1,8 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
-using DevLog.Models;
+﻿using DevLog.Models;
 using DevLog.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
-var repo = new LogRepository();
+var services = new ServiceCollection();
+services.AddSingleton<ILogRepository, LogRepository>();
+var provider = services.BuildServiceProvider();
+var repo = provider.GetRequiredService<ILogRepository>();
 
 if (args.Length == 0)
 {

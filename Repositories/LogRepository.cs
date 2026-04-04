@@ -3,7 +3,7 @@ using DevLog.Models;
 
 namespace DevLog.Repositories;
 
-public class LogRepository
+public class LogRepository : ILogRepository
 {
     private readonly string _filePath = "devlog.json";
     private readonly JsonSerializerOptions _jsonOptions = new() { WriteIndented = true };
