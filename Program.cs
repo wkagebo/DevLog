@@ -1,4 +1,5 @@
-﻿using DevLog.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using DevLog.Models;
 using DevLog.Repositories;
 
 var repo = new LogRepository();
@@ -42,6 +43,27 @@ switch (args[0])
         foreach (var e in entries)
         {
             Console.WriteLine($"[{e.CreatedAt:yyyy-MM-dd HH:mm}] {e.Text}");
+        }
+        break;
+    
+    case "summary":
+        var logEntries = repo.GetAll();
+        var numEntries = logEntries.Count;
+
+        Console.WriteLine($"Total entries: {numEntries}");
+        Console.WriteLine("Entries per day:");
+
+        var entriesPerday = logEntries.GroupBy(entry => entry.CreatedAt.Date);
+
+        foreach (var e in entriesPerday)
+        {
+            Console.WriteLine($"{e.Key:yyyy-MM-dd}: {e.Count()}");
+        }
+
+        var longestEntry = logEntries.MaxBy(e => e.Text.Length);
+        if (longestEntry != null)
+        {
+            Console.WriteLine($"Longest entry: \"{longestEntry.Text}\"");
         }
         break;
     
